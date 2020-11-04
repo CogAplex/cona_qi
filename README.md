@@ -13,7 +13,7 @@
 6. ~/cona_ros/cona_ros_node 내용 수정    
     export ROS_IP=192.168.217.11      
     export ROS_MASTER_URI=http://192.168.217.3:11311 
-7. [git clone http://github.com/CogAplex/cona_qi] 로 파일 다운로드    
+7. hancom pc 에서 [git clone http://github.com/CogAplex/cona_qi] 로 파일 다운로드    
 8. cona_qi/cona/bin/ 의 내용물을 ~/cona_ros/cona/bin/ 에 복사    
 9. cona_qi/ros/devel/lib/cona_ros 의 내용물을 ~/cona_ros/ros/devel/lib/cona_ros 에 복사    
    8, 9번 수행시 cona 가 실행중에는 카피가 되지 않음. 그때는 cona pc 안의 해당 폴더 내용물을 삭제후 카피    
