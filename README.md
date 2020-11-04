@@ -30,6 +30,7 @@
   
   
 # Map building
+주의사항: hancom amcl 에서 주는 pose를 기준으로 맵을 생성하기 때문에 rviz 를 통해서 위치가 잘 맞는 상태에서 build이 수행 되어야 함.      
   
 [rostopic pub /cona/command std_msgs/String "data: 'CMD'"] 를 통해 명령을 줄수 있음.     
 
@@ -47,7 +48,7 @@
     [rostopic pub /cona/command std_msgs/String "data: 'save'"] 로 중간 저장
 5. 동작 확인    
     rivz 에 /CoNA_DB 위에 로봇 위치후 강제로 다른 위치로 초기화    
-    그 후에 [rostopic pub /cona/command std_msgs/String "data: 'load'"] 로 위치 정상화 시키는 지 확인. (save 가 되어있어야함)
+    그 후에 [rostopic pub /cona/command std_msgs/String "data: 'load'"] 로 위치 정상화 시키는지 확인. (save 가 되어있어야함)
     
 
 
